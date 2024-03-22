@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img{
+
+            }
+            img:hover{  /*사진 위에 마우스를 올렸을 때만 효과가 적용되도록 hover 문구 추가*/
+                -webkit-filter: grayscale(100%) blur(3px); /*크롬이나 사파리용*/
+                -o-filter: grayscale(100%) blur(3px); /*오페라용*/
+                filter : grayscale(100%) blur(3px); 
+                /*최신 기능이라 적용 안되는 사이트가 있을 수도 있음. 그래서 만일을 대비해서 위에 2줄처럼 접두사를 사용한 필터도 추가 사용*/
+            }
+            h1{
+                -webkit-filter: blur(3px);
+                -o-filter: blur(3px);
+                filter : blur(3px);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>mountain</h1>
+        <img src="mountain.jpg" alt=""/>
+    </body>
+</html>

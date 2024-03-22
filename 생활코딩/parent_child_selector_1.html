@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul li{
+                color : red;    /*ul 밑에 있는 모든 li태그를 선택한다.*/
+            }
+            #lecture>li{    /*lecture바로 빝에 있는 li만을 선택한다.*/
+                border:1px solid red;
+            }
+            ul,ol{  /*ul과 ol을 동시에 선택한다.*/
+                background-color: powderblue;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+        </ul>
+        <ol id="lecture">
+            <li>html</li>
+            <li>css</li>
+                <ol>
+                    <li>selector</li>
+                    <li>declaration</li>
+                </ol>
+            <li>javascript</li>
+        </ol>
+    </body>
+</html>
+
+
+<!--
+    <링크와 관련된 가상 클래스 선택자>
+    :link - 방문한 적이 없는 링크
+    :visited - 방문한 적이 있는 링크
+    :hover - 마우스를 롤오버 했을 때 
+    :active - 마우스를 클릭했을 때 
+-->

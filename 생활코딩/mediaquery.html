@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media (max-width:600px){
+            body{
+                background-color: green;
+            }
+        }
+        @media (max-width:500px){
+            body{
+                background-color: red;
+            }
+        }
+        @media (min-width:601px){
+            body{
+                background-color: blue;
+            }
+        }
+        /* media query : 화면의 종류와 크기에 따라서 디자인을 달리 줄 수 있는 CSS 기능 중 하나이다.
+        모드가 나중에 나오는 것이 우선 순위가 높아진다. 
+        확인하려면 F12를 이용해서 콘솔을 켜고 콘솔창을 조절하면 배경색이 변하는 것을 볼 수 있다.*/
+    </style>
+</head>
+<body>
+   <ul>
+       <li>~500px : red</li>
+       <li>501~600px : green</li>
+       <li>601px~ : blue</li>
+   </ul>
+</body>
+</html>

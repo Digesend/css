@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      li{color:red !important;} /*!important를 사용하면 가장 우선된다.*/
+      /*#idsel{color:blue;}*/   /*태그 선택자보다는 id선택자가 우선권을 지닌다.*/
+      /*#idsel{color:yellow;}*/ /*앞선 idsel 선택자보다 후에 나온 idsel 선택자가 우선권을 지닌다.*/
+      .classsel{color:green;}   /*class보다는 id가 우선권을 지닌다.*/
+      /*종합해보면, id선택자 > class선택자 > 태그 선택자가 된다.*/
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>html</li>
+      <li id="idsel" class="classsel">css</li>
+      <li>javascript</li>
+    </ul>
+    <ol>
+      <li>style attribute</li>
+      <li>id selector</li>
+      <li>class selector</li>
+      <li>tag selector</li>
+    </ol>
+  </body>
+</html>

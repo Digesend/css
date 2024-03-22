@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        #parent, #other, #grand{
+            border:5px solid tomato;
+        }
+        #grand{
+            position: relative;
+        }
+        #me{   
+            background-color: black;
+            color:white;
+            position: absolute;  
+            /*absolute : 가장 가까운 부모 요소 중 static이 아닌 요소의 위치를 기준으로 위치 이동*/
+            /*relative 속성이 사용된 grand id를 기준으로 위치 이동 그리고 absolute를 사용하면 부모와 무관해진다.
+            relative가 사용되지 않으면 html을 기준으로 위치가 이동된다.*/
+            left:1rem;
+            top:1rem;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="other">other</div>
+    <div id="grand">
+       grand
+        <div id="parent">
+           parent
+           <div id="me">me</div>
+        </div>
+    </div>
+     
+  </body>
+</html>
