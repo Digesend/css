@@ -1,0 +1,25 @@
+<!--transition : css3부터 적용되는 모션 그래픽 기능-->
+<!doctype html>
+<html>
+<head>
+  <style>
+    a{
+      font-size:3rem;
+      display:inline-block; /*translate 효과를 주려면 dipaly:inline-block 효과를 줘야 한다.*/
+/*
+      transition-property: font-size transform; transform 변환이 있을 때 font-size 전환이 일어난다.
+      transition-duration: 0.1s;    전환에 걸리는 시간
+      transition:all 0.1s;
+*/
+      transition:all 0.1s;
+    }
+    a:active{   /*active는 클릭시에 동작한다.*/
+      transform:translate(20px, 20px);  /*translate는 이동하는 효과를 준다.*/
+      font-size:2rem;
+    }
+  </style>
+</head>
+<body>
+  <a href="#">Click</a> <!--#을 사용하면 어느 웹페이지로도 이동하지 않는다.-->
+</body>
+</html>
